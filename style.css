@@ -1,0 +1,633 @@
+@font-face {
+    font-family: 'Janson Caps'; 
+    src: url('jansonoldstylessismallcaps.ttf?v=1') format('truetype');
+
+  }
+
+body {
+	margin: 0;
+    background-attachment: fixed;
+    background-image: url(imgs/backgroundB.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.banner img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  opacity: 0; 
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/*banner fade in effect*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.main {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.header {
+  background-color: black;
+  color: white;
+  height: 45px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  height: 60px;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 15px;
+  margin: 0;
+}
+
+#topButton {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 99; /* Make sure it does not overlap */
+  border: none;
+  outline: none;
+  background-color: #333333;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#topButton:hover {
+  background-color: #666666; /* Add a dark-grey background on hover */
+}
+  
+.logoplacement {
+    margin-top: 15px;
+    margin-left: 30px;
+}
+  
+.menulist {
+  width: auto;
+  margin-top: -37px;
+  margin-left: 750px;
+  display: flex;
+  justify-content: center;
+}
+  
+.menulist ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Ensures elements stay in a row */
+  gap: 0px; /* Adds spacing between items */
+}
+  
+.menulist li {
+    display: inline-block;
+}
+  
+.menulist li a {
+  display: block;
+  padding: 6px 1px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+  
+.menulist li a:hover {
+  transform: scale(1.1);
+}
+
+.descA {
+  margin-top: -550px;
+  margin-left: 480px;
+}
+
+.descA p {
+  background: linear-gradient(to right, #ffe062, #ffcc00);
+  -webkit-background-clip: text;
+  background-clip: text; /* This helps with some browsers */
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: 'Janson Caps'; 
+}
+
+.descA h3{
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 0px;
+}
+
+.descA2 {
+  max-width: 50%;
+  margin-top: -490px;
+  margin-left: 0px;
+}
+
+.descA2 p {
+  background: linear-gradient(to right, #ffe062, #ffcc00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: 'Janson Caps'; 
+}
+
+.descA2 h3{
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 0px;
+}
+
+.descA3 {
+  margin-top: -540px;
+  margin-left: 480px;
+}
+
+.descA3 p {
+  background: linear-gradient(to right, #ffe062, #ffcc00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: 'Janson Caps'; 
+}
+
+.descA3 h3{
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 0px;
+}
+
+.descA3 img{
+  margin-left: 110px;
+}
+
+.descB {
+  margin-top: -410px;
+  margin-left: 0px;
+}
+  
+.descB h1 {
+  background: linear-gradient(to right, #ffe062, #ffcc00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: 'Janson Caps'; 
+}
+
+.descB p {
+  background: linear-gradient(to right, #969696, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: 'Janson Caps'; 
+}
+
+.descB h3{
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 0px;
+}
+
+.descB b {
+  font-size: 25px;
+}
+
+/*Left side*/
+.hidden {
+    margin-top: -70px;
+    margin-left: -120px;
+    opacity: 0;
+    transform: translateX(-60px); /* Adjust direction */
+    transition: all 0.6s ease-in-out;
+}
+
+/*Right side*/
+.hidden2 {
+  margin-top: 10px;
+  margin-left: 590px;
+  opacity: 0;
+  transform: translateX(60px); /* Adjust direction */
+  transition: all 0.6s ease-in-out;
+}
+
+.hidden3 {
+  margin-top: -10px;
+  margin-left: -120px;
+  opacity: 0;
+  transform: translateX(-60px); /* Adjust direction */
+  transition: all 0.6s ease-in-out;
+}
+
+.hidden4 {
+  margin-top: -70px;
+  margin-left: -130px;
+  opacity: 0;
+  transform: translateX(-60px); /* Adjust direction */
+  transition: all 0.6s ease-in-out;
+}
+
+.hidden5 {
+  margin-top: -450px;
+  margin-left: 740px;
+  opacity: 0;
+  transform: translateX(60px); /* Adjust direction */
+  transition: all 0.6s ease-in-out;
+}
+
+.preview {
+  text-align: center;
+  max-width: 100%;
+}
+  
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+* {
+    box-sizing: border-box;
+}  
+  
+.imgRow {
+    width: 100%;
+    content: "";
+    clear: both;
+    display: table;
+    max-width: 100%;
+}
+
+.imgColumn {
+    float: left;
+    width: 33.33%;
+    padding: 3px;
+}
+
+.imgRow2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5px; /* Adjust gap if needed */
+}
+
+.imgColumn2 {
+  width: 33.33%;
+}
+
+.imgColumn2 img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.imgColumn2 img:hover {
+  transform: scale(1.1);
+}
+
+.textRow {
+  width: 87%;
+  content: "";
+  margin-left: 80px;
+  text-align: center;
+  clear: both;
+  display: table;
+}
+
+.textColumn {
+  float: left;
+  width: 50%;
+  padding: 3px;
+}
+
+.textColumn h1{
+  background: linear-gradient(to right, #ffe062, #ffcc00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: 'Janson Caps'; 
+}
+
+.textColumn p{
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 0px;
+}
+
+.textRew p{
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 0px;
+}
+
+.textRew h1{
+  color: white;
+  font-size: 15px;
+  font-weight: lighter;
+  text-align: center;
+  letter-spacing: 0px;
+}
+
+.imgRow3 {
+  width: 86%; /* Overall */
+  display: flex;
+  text-align: center;
+  justify-content: flex-start; /* Aligns images inside each column to the left */
+  align-items: center; /* Keeps items vertically aligned */
+  gap: 0px;
+  margin: 0 auto;
+}
+
+.imgColumn3 {
+  flex: 0 0 14.5%; /* Adjust this value to control image size */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.imgColumn3 img {
+  width: 90%;
+  max-width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.imgColumn3 img:hover {
+  transform: scale(1.1);
+}
+
+.fortag {
+  color: white;
+  margin-top: 0px;
+  margin-left: -675px;
+  font-size: 30px;
+}
+
+.fortex h3{
+  color: white;
+  margin-left: 70px;
+  font-size: 15px;
+  text-align: left;
+  font-weight: normal;
+  letter-spacing: 0px;
+}
+
+.limittag {
+  color: white;
+  margin-top: 0px;
+  margin-left: -712px;
+  font-size: 30px;
+}
+
+.semilimittag {
+  color: white;
+  margin-top: 0px;
+  margin-left: -631px;
+  font-size: 30px;
+}
+
+.imgRow4 {
+  width: 86%;
+  margin-left: 75px;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.imgColumn4 {
+  float: left;
+  width: 33.33%;
+  padding: 3px;
+}
+
+.imgColumn4 p {
+  color: white;
+  text-align: center;
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+/* Style the tab */
+.tab {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;  /* Ensures buttons sit next to each other */
+  justify-content: center;  /* Centers buttons inside the tab */
+}
+
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45%;  /* Ensures buttons fit side by side */
+}
+
+.tab img {
+  width: 86%; 
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.tab button.active {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Style the tab content */
+.tabcontent {
+  width: 90%;
+  margin: 0 auto;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.35);
+  padding: 6px 12px;
+  border-top: none;
+}
+
+/* Slideshow container */
+.deck-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  margin-left: -48px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  margin-left: 1007px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+.deckA {
+  display: none;
+  color: white;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.deckB {
+  display: none;
+  color: white;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Fading animation, not used yet */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.dectex h3{
+  color: white;
+  margin-left: 80px;
+  font-size: 15px;
+  text-align: left;
+  font-weight: normal;
+  letter-spacing: 0px;
+}
+
+.deckImg {
+  margin-left: -900px;
+}
+
+.deckName {
+  margin-left: 100px;
+  margin-top: -60px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.deckName h1 {
+  font-weight: lighter;
+}
+
+.deckRow {
+  width: 85%; /* Overall */
+  display: flex;
+  text-align: center;
+  justify-content: flex-start; /* Aligns images inside each column to the left */
+  align-items: center; /* Keeps items vertically aligned */
+  gap: 0px;
+  margin-left: 50px;
+}
+
+.deckColumn {
+  flex: 0 0 7%; /* Adjust this value to control image size */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.deckColumn img {
+  width: 90%;
+  max-width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.deckColumn img:hover {
+  transform: scale(1.1);
+}

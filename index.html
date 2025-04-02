@@ -1,0 +1,155 @@
+<html>
+<meta charset="utf-8">
+<title>Yu-Gi-Oh! Master Duel</title>
+<head>
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="icon" type="image/jpg" href="imgs/fd.jpg">
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-MBN1K9TMJZ"></script>
+	 
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-MBN1K9TMJZ');
+	</script>
+</head>
+
+<body>
+
+	<button onclick="topFunction()" id="topButton" title="Go to top"><img src="imgs/top.png" width="35px"></button>
+
+	<div class="header">
+		<img src="imgs/konmi.png" class="logoplacement" width="10%">
+		<div class="menulist">
+			<ul>
+            <li><a href="index.html"><img src="imgs/mainpage.png" width="80%"></a></li>
+            <li><a href="event.html"><img src="imgs/event.png" width="80%"></a></li>
+			<li><a href="decklist.html"><img src="imgs/decklist.png" width="80%"></a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="banner">
+		<img src="imgs/banner.png" width="100%;">
+	</div>
+
+	<div class="main">
+		<img src="imgs/rend4.png" class="hidden" id="slideImage" width="65%">
+		<div class="descA">
+			<p>AN AUTHENTIC<br/>
+			YU-GI-OH! DIGITAL CARD GAME!</p>
+
+			<h3>The competitive card game that has been<br/>
+			evolving for 20 years, and it's still thriving!<br/><br/>
+			Prepare your deck and become the<br/>
+			King of Games!</h3><br/>
+
+			<div class="imgRow">
+				<div class="imgColumn">
+					<img src="imgs/s1.png" width="100%">
+				</div>
+				<div class="imgColumn">
+					<img src="imgs/s2.png" width="100%">
+				</div>
+				<div class="imgColumn">
+					<img src="imgs/s3.png" width="100%">
+				</div>
+			</div>
+		</div>
+			
+		<img src="imgs/rend2.png" class="hidden2" id="slideImage" width="55%">
+		<div class="descA2">
+			<p>OVER TEN THOUSAND<br/>
+			CARDS TO CHOOSE FROM</p>
+
+			<h3>Build the strongest deck with over<br/>
+			10,000 cards in the collection!<br/><br/>
+			Enjoy various decks and Duel other<br/>
+			Duelists all around the world!</h3><br/>
+
+			<div class="imgRow2">
+				<div class="imgColumn2">
+					<img src="imgs/c1.png" width="60%">
+				</div>
+				<div class="imgColumn2">
+					<img src="imgs/c2.png" width="60%">
+				</div>
+				<div class="imgColumn2">
+					<img src="imgs/c3.png" width="60%">
+				</div>
+				<div class="imgColumn2">
+					<img src="imgs/c4.png" width="60%">
+				</div>
+				<div class="imgColumn2">
+					<img src="imgs/c5.png" width="60%">
+				</div>
+			</div>
+		</div>
+			
+		<img src="imgs/rend3.png" class="hidden3" id="slideImage" width="60%">
+		<div class="descA3">
+			<p>CROSS PLATFORM AVAILABLE</p>
+
+			<h3>Download now!</h3>
+
+			<img src="imgs/platforms.png" width="70%">
+			<br/><br/>
+			<img src="imgs/requ.png" width="75%">
+		</div>
+
+		<br/><br/>
+
+		<div class="footer">
+			<br/>
+			<p>©2025 Konami Digital Entertainment</p>
+		</div>
+
+	</div>
+	
+</body>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		const observer = new IntersectionObserver((entries) => {
+    	entries.forEach((entry) => {
+      		if (entry.isIntersecting) {
+        	entry.target.classList.add("show");
+		}
+		});
+	}, { threshold: 0.3 });
+
+	document.querySelectorAll(".hidden, .hidden2, .hidden3").forEach((el) => observer.observe(el));
+	});
+</script>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+    	let mybutton = document.getElementById("topButton");
+
+    	if (!mybutton) {
+        	console.error("Button not found!");
+        	return;
+    	}
+
+    	console.log("Button found. Initial state:", mybutton.style.display);
+
+    	window.addEventListener("scroll", function () {
+        	console.log("ScrollY:", window.scrollY);
+        	if (window.scrollY > 20) {
+            	mybutton.style.display = "block";
+            	console.log("Button shown");
+        	} else {
+            	mybutton.style.display = "none";
+            	console.log("Button hidden");
+        	}
+    	});
+
+    	mybutton.addEventListener("click", function () {
+        	console.log("Scrolling to top...");
+        	window.scrollTo({ top: 0, behavior: "smooth" }); // Smooth scrolling effect
+    	});
+	});
+</script>
+
+</html>
